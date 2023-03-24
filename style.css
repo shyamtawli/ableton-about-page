@@ -16,18 +16,29 @@ body {
   font-size: 1rem;
 }
 
-.first-header {
+header {
+  display: flex;
+  border-bottom: 2px solid #eee;
+  height: 75px;
+}
+
+.logo img {
+  height: 5rem;
+  width: 5rem;
+  align-items: center;
+  margin-left: 2rem;
+}
+
+.header-one {
   display: flex;
   flex-direction: row;
-  height: 75px;
   justify-content: space-between;
-  border-bottom: 2px solid #eee;
+  width: 100%;
 }
 
 .header-left {
   display: flex;
   flex-direction: row;
-  padding-left: 2rem;
 }
 
 .header-left ul {
@@ -52,7 +63,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding-right: 3rem;
+  padding-right: 2rem;
 }
 
 .header-right p {
@@ -80,4 +91,58 @@ body {
 
 .header-two p:hover {
   cursor: pointer;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .header-left ul,
+  .header-right {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+    gap: 0.5rem;
+  }
+
+  .down-icon {
+    display: inline-block;
+    width: 10px;
+    height: 16px;
+    background-image: url(./images/down-icon.svg);
+    background-size: contain;
+  }
+
+  .up-icon {
+    display: inline-block;
+    width: 10px;
+    height: 16px;
+    background-image: url(./images/up-icon.svg);
+    background-size: contain;
+  }
+
+  .menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    background: #0000ff;
+    transition: top 0.3s ease-in-out;
+    z-index: 1;
+    padding-top: 3rem;
+  }
+
+  .menu p {
+    margin-top: 1rem;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+  }
 }

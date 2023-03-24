@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script
+      src="https://kit.fontawesome.com/690742aa24.js"
+      crossorigin="anonymous"
+    ></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,32 +13,59 @@
   </head>
   <body>
     <header>
+      <div class="logo">
+        <img src="./images/ableton-logo.png" alt="logo" />
+      </div>
       <div class="header-one">
-        <div class="first-header">
-          <div class="header-left">
-            <img src="./images/ableton-logo.png" alt="logo" />
-            <ul>
-              <li>Live</li>
-              <li>Push</li>
-              <li>Note</li>
-              <li>Link</li>
-              <li>Shop</li>
-              <li>Packs</li>
-              <li>Help</li>
-              <li style="color: #ff764d">More +</li>
-            </ul>
+        <div class="header-left">
+          <!-- MOOBILE VIEW -->
+          <div class="menu-toggle">
+            <p>Menu</p>
+            <i class="down-icon"></i>
+            <!-- <div class="menu">
+              <p>Live</p>
+              <p>Push</p>
+              <p>Note</p>
+              <p>Link</p>
+              <p>Shop</p>
+              <p>Packs</p>
+              <p>Help</p>
+            </div> -->
           </div>
-          <div class="header-right">
-            <p style="color: #0000ff">Try Live for free</p>
-            <p>Log in or register</p>
-          </div>
+
+          <!-- DESKTOP VIEW -->
+          <ul>
+            <li>Live</li>
+            <li>Push</li>
+            <li>Note</li>
+            <li>Link</li>
+            <li>Shop</li>
+            <li>Packs</li>
+            <li>Help</li>
+            <li style="color: #ff764d">More +</li>
+          </ul>
+        </div>
+        <div class="header-right">
+          <p style="color: #0000ff">Try Live for free</p>
+          <p>Log in or register</p>
         </div>
       </div>
-      <div class="header-two">
-        <p style="color: #ff764d">About</p>
-        <p>Jobs</p>
-        <p>Apprenticeships</p>
-      </div>
     </header>
+    <div class="header-two">
+      <p style="color: #ff764d">About</p>
+      <p>Jobs</p>
+      <p>Apprenticeships</p>
+    </div>
+    <script>
+      const icon = document.querySelector(".down-icon");
+      const menutoggle = document.querySelector(".menu-toggle");
+      const menuMobile = document.querySelector(".menu");
+      const logo = document.querySelector(".logo");
+
+      menutoggle.addEventListener("click", () => {
+        icon.classList.toggle("up-icon");
+        menuMobile.style.top = menuMobile.style.top === "0%" ? "-100%" : "0%";
+      });
+    </script>
   </body>
 </html>
