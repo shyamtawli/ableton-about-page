@@ -156,3 +156,24 @@ header {
     font-weight: bold;
   }
 }
+
+.hero-section {
+  height: 510px;
+  padding-left: 7rem;
+  padding-right: 7rem;
+  margin-bottom: 7rem;
+  position: relative;
+}
+
+.hero-section img {
+  width: 100%;
+}
+
+.hero-section p {
+  color: rgb(253, 89, 72);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 7.5rem;
+  transform: translate(-50%, -50%);
+}
