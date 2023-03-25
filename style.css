@@ -22,11 +22,16 @@ header {
   height: 75px;
 }
 
+.logo {
+  display: flex;
+}
+
 .logo img {
   height: 5rem;
   width: 5rem;
   align-items: center;
   margin-left: 2rem;
+  z-index: 10;
 }
 
 .header-one {
@@ -112,12 +117,17 @@ header {
     gap: 0.5rem;
   }
 
+  .menu-toggle p {
+    z-index: 10;
+  }
+
   .down-icon {
     display: inline-block;
     width: 10px;
     height: 16px;
     background-image: url(./images/down-icon.svg);
     background-size: contain;
+    z-index: 10;
   }
 
   .up-icon {
@@ -133,16 +143,17 @@ header {
     top: -100%;
     left: 0;
     width: 100%;
-    background: #0000ff;
+    background: #f3f3f3;
     transition: top 0.3s ease-in-out;
     z-index: 1;
-    padding-top: 3rem;
+    padding: 4rem 0 1rem 2rem;
   }
 
   .menu p {
     margin-top: 1rem;
-    color: white;
-    font-size: 1rem;
+
+    color: #000;
+    font-size: 1.25rem;
     font-weight: bold;
   }
 }

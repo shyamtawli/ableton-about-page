@@ -15,24 +15,24 @@
     <header>
       <div class="logo">
         <img src="./images/ableton-logo.png" alt="logo" />
+        <!-- MOOBILE VIEW -->
+        <div class="menu-toggle">
+          <p>Menu</p>
+          <i class="down-icon"></i>
+          <div class="menu">
+            <p>Live</p>
+            <p>Push</p>
+            <p>Note</p>
+            <p>Link</p>
+            <p>Shop</p>
+            <p>Packs</p>
+            <p>Help</p>
+            <p>Try Live for free</p>
+          </div>
+        </div>
       </div>
       <div class="header-one">
         <div class="header-left">
-          <!-- MOOBILE VIEW -->
-          <div class="menu-toggle">
-            <p>Menu</p>
-            <i class="down-icon"></i>
-            <!-- <div class="menu">
-              <p>Live</p>
-              <p>Push</p>
-              <p>Note</p>
-              <p>Link</p>
-              <p>Shop</p>
-              <p>Packs</p>
-              <p>Help</p>
-            </div> -->
-          </div>
-
           <!-- DESKTOP VIEW -->
           <ul>
             <li>Live</li>
@@ -64,7 +64,7 @@
 
       menutoggle.addEventListener("click", () => {
         icon.classList.toggle("up-icon");
-        menuMobile.style.top = menuMobile.style.top === "0%" ? "-100%" : "0%";
+        menuMobile.style.top = menuMobile.style.top === "0px" ? "-100%" : "0px";
       });
     </script>
   </body>
