@@ -281,3 +281,67 @@ header {
   margin-right: 8.3vw;
   background-size: cover;
 }
+
+.video-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* IMAGE CONTAINER  2*/
+.image-container-2 {
+  padding-top: 8vw;
+  padding-bottom: 8vw;
+  height: 58.3vw;
+  position: relative;
+}
+
+.image-5 {
+  background-image: url(./images/photo-5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 41.66667vw;
+  height: 41.66667vw;
+  margin-right: 8.33333vw;
+  position: absolute;
+  top: 25%;
+  right: 0;
+  z-index: 2;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.color-box-2 {
+  background-color: #b6ffc0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 58.333vw;
+  height: 75vw;
+  z-index: 1;
+}
+
+.two-image-container {
+  display: inline-block;
+  position: relative;
+  width: 33.3vw;
+  height: 58.3vw;
+  margin-left: 8.3vw;
+}
+
+.image-3 {
+  background-image: url(./images/photo-3.jpg);
+  height: 25vw;
+  width: 33.3vw;
+  z-index: 2;
+  position: absolute;
+  background-size: cover;
+}
+.image-4 {
+  background-image: url(./images/photo-4.jpg);
+  height: 25vw;
+  width: 33.3vw;
+  z-index: 2;
+  position: absolute;
+  background-size: cover;
+  bottom: 0;
+}

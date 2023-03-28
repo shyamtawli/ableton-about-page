@@ -67,6 +67,7 @@
     />
     <p class="hero-title">Ableton</p>
 
+    <!-- TEXT CONTAINER 1 -->
     <div class="text-wrapper">
       <div class="text-container">
         <h3>
@@ -83,10 +84,69 @@
       </div>
     </div>
 
+    <!-- IMAGE CONATINER  1-->
     <div class="image-container">
       <div class="image-1"></div>
       <div class="color-box"></div>
       <div class="image-2"></div>
+    </div>
+
+    <!-- TEXT CONTAINER 2 -->
+    <div class="text-wrapper">
+      <div class="text-container">
+        <h3>
+          Making music isn't easy. It takes time, effort, and learning. But when
+          you're in the flow,it's incredibly rewarding.
+        </h3>
+        <p>
+          We feel the same way about making the Ableton products. The driving
+          force behind Ableton is our passion for what we make, and the prople
+          we make it for.
+        </p>
+      </div>
+    </div>
+
+    <!-- YOUTUBE VIDEO -->
+    <div class="video-container">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/9SbnhgjeyXA"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <!-- TEXT CONATINNER 3 -->
+    <div class="text-wrapper">
+      <div class="text-container">
+        <h3>
+          We are more than 350 people from 30 different countires divided
+          between our headquarters in Berlin and our offices in Los Angeles and
+          Tokyo.
+        </h3>
+        <p>
+          Most of us are acive musicians, producers, and DJs, and many of us use
+          Live and Push every day. We come from a wide range of cultural and
+          professional backgrounds. Some of us have PhDs, some are self-taught,
+          and most of us are somewhere in between. What connects us is the
+          shared belief that each of us has the skills and knowledge to
+          contribute to something big: helping to shape the future of music
+          culture.
+        </p>
+      </div>
+    </div>
+
+    <!-- IMAGE CONTAINER 2-->
+    <div class="image-container-2">
+      <div class="color-box-2"></div>
+      <div class="two-image-container">
+        <div class="image-3"></div>
+        <div class="image-4"></div>
+      </div>
+      <div class="image-5"></div>
     </div>
 
     <script>
@@ -95,6 +155,7 @@
       const menuMobile = document.querySelector(".menu");
       const logo = document.querySelector(".logo");
 
+      // Dropdown Menu
       menutoggle.addEventListener("click", () => {
         icon.classList.toggle("up-icon");
         menuMobile.style.top = menuMobile.style.top === "0px" ? "-100%" : "0px";
