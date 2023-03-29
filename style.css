@@ -399,3 +399,42 @@ header {
   position: absolute;
   right: 0;
 }
+
+.about-job {
+  height: 41.66667vw;
+  margin-left: 8.333vw;
+  margin-right: 8.333vw;
+  padding-bottom: 8.33vw;
+  display: flex;
+  flex-direction: row;
+}
+
+.about-job .about-image {
+  width: 50%;
+  height: 100%;
+  background-image: url(./images/photo-9.jpg);
+  background-size: cover;
+}
+
+.about-job .about-text {
+  background: #b1c5ff;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 6vw;
+  line-height: 1.5;
+}
+
+.about-text h1 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.about-text a {
+  color: #0000ff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
