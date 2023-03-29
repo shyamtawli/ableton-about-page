@@ -347,3 +347,15 @@ header {
   background-size: cover;
   bottom: 0;
 }
+
+.image-6 {
+  width: auto;
+  margin-left: 8vw;
+  margin-right: 8vw;
+  margin-bottom: 8vw;
+}
+
+.image-6 img {
+  height: auto;
+  max-width: 100%;
+}
