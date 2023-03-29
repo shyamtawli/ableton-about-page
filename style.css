@@ -359,3 +359,43 @@ header {
   height: auto;
   max-width: 100%;
 }
+
+.image-container-3 {
+  position: relative;
+  height: 58.33333vw;
+  padding-top: 8.33333vw;
+  padding-bottom: 8.33333vw;
+  display: flex;
+  align-items: center;
+}
+
+.color-box-3 {
+  background: #d5b3ff;
+  width: 66.66667vw;
+  height: 58.33333vw;
+  position: absolute;
+  left: 16.3vw;
+  top: 0;
+  z-index: 0;
+}
+
+.image-8 {
+  background-image: url(./images/photo-8.jpg);
+  background-size: cover;
+  width: 33.33333vw;
+  height: 25vw;
+  margin-left: 8.33vw;
+  position: absolute;
+  display: inline-block;
+  z-index: 1;
+}
+
+.image-7 {
+  background-image: url(./images/photo-7.jpg);
+  background-size: cover;
+  width: 41.66667vw;
+  height: 41.66667vw;
+  z-index: 1;
+  position: absolute;
+  right: 0;
+}
