@@ -445,13 +445,19 @@ header {
     height: 101vw;
   }
 
-  .about-image {
+  .about-job .about-image {
     width: 100%;
-    height: 70%;
   }
 
-  .about-text {
+  .about-job .about-text {
     width: 100%;
-    height: 30%;
+    height: 40vw;
+  }
+  .about-text h1 {
+    font-size: 1rem;
+  }
+
+  .about-text a {
+    font-size: 1rem;
   }
 }
