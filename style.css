@@ -461,3 +461,77 @@ header {
     font-size: 1rem;
   }
 }
+
+footer {
+  padding-left: 8.33vw;
+  padding-right: 8.33vw;
+  border-top: 2px solid #efefef;
+}
+
+.footer-container {
+  padding-top: 8.33vw;
+}
+
+.footer-logo img {
+  width: 18%;
+  margin-bottom: 4rem;
+}
+
+.footer-info {
+  display: grid;
+  grid-template-columns: 1.7fr 2fr 2.5fr;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.grid-items {
+  margin-top: 1rem;
+}
+
+.footer-titles p {
+  font-size: 1.1rem;
+  font-weight: 200;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+.social-logo i {
+  margin-top: 1rem;
+  width: 2rem;
+  cursor: pointer;
+}
+
+.email-input {
+  background: #eee;
+  border: 0;
+  border-radius: 0;
+  padding: 0.75rem 0.75rem;
+  width: 75%;
+  font-size: inherit;
+  margin-top: 1rem;
+}
+
+.signup-button {
+  background: blue;
+  font-weight: bold;
+  font-size: inherit;
+  border: 0;
+  color: #fff;
+  border-radius: 0;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  display: inline-block;
+}
+
+.dropdown-menu select {
+  background: #eee;
+  height: 1.8rem;
+  cursor: pointer;
+  border: 0;
+  border-radius: 0;
+  color: #000;
+  padding: 0.3rem 50px 0.3rem 0.7rem;
+}
